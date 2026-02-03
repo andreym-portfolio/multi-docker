@@ -2,7 +2,7 @@ name: Deploy MultiDocker
 on:
   push:
     branches:
-      - master # check your repo, your default branch might be master testing
+      - master # check your repo, your default branch might be master
 
 jobs:
   build:
@@ -22,3 +22,4 @@ jobs:
       - run: docker push rallycoding/multi-nginx
       - run: docker push rallycoding/multi-server
       - run: docker push rallycoding/multi-worker
+      
